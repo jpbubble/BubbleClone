@@ -8,5 +8,6 @@ git clone https://github.com/TrickyGameTools/TQMG.git TQMG
 
 mkdir Bubble
 cd Bubble
-git clone https://github.com/jpbubble/Bubble_Libraries.git
+git clone https://github.com/jpbubble/Bubble_Libraries.git Libraries
+git clone https://github.com/jpbubble/Bubble_Build.git Build
 cd ..
