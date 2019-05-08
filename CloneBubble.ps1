@@ -11,4 +11,5 @@ cd Bubble
 git clone "https://github.com/jpbubble/Bubble_Libraries.git" Libraries
 git clone "https://github.com/jpbubble/Bubble_Build.git" Build
 git clone "https://github.com/jpbubble/Bubble_CLI.git" CLI
+git clone "https://github.com/jpbubble/NIL-isn-t-Lua.git" NIL
 cd ..
