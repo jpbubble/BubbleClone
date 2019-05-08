@@ -29,7 +29,7 @@ function Plus(scandir,name)
 	end
 end
 Plus(bubbledir.."/CLI/bin/Release","CLI") 
-
+Plus(bubbledir.."/MonoGame/src/bin/DesktopGL/AnyCPU/Release","MonoGame")
 
 
 
