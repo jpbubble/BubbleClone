@@ -18,14 +18,14 @@ bubbledir = "E:/Projects/Applications/VisualStudio/Bubble"
 output = bubbledir.."/Build/bin/Release/Engines.jcr"
 
 JLS.SetJCR6OutputFile(output)
-AddComment("Bubble","Contains all Bubble engines.\nThe builder uses this file to link the correct engine to each project")
+AddComment("Bubble","Contains all Bubble engines. The builder uses this file to link the correct engine to each project")
 
 function Plus(scandir,name)
 	print("\n\nEngine: "..name)
 	d = GetDir(scandir)
 	for _,f in ipairs(d) do
 		print("Adding: "..f.." to "..name)
-		Add(sprintf("%s/%s",scandir,f),sprintf("Engine_bin/%s",f),{ Author="Jeroen P. Broks", Notes="GPL3", Storage='lzma' })
+		Add(sprintf("%s/%s",scandir,f),sprintf("Engine_bin/%s/%s",name,f),{ Author="Jeroen P. Broks", Notes="GPL3", Storage='lzma' })
 	end
 end
 Plus(bubbledir.."/CLI/bin/Release","CLI") 
