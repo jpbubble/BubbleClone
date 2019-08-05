@@ -21,7 +21,7 @@ JLS.SetJCR6OutputFile(output)
 AddComment("Bubble","Contains all Bubble engines. The builder uses this file to link the correct engine to each project")
 
 function Plus(scandir,name)
-	print("\n\nEngine: "..name)
+	print("/n/nEngine: "..name)
 	d = GetDir(scandir)
 	for _,f in ipairs(d) do
 		print("Adding: "..f.." to "..name)
@@ -30,7 +30,8 @@ function Plus(scandir,name)
 end
 Plus(bubbledir.."/CLI/bin/Release","CLI") 
 Plus(bubbledir.."/MonoGame/src/bin/DesktopGL/AnyCPU/Release","MonoGame")
-Plus(bubbledir.."/NALA/bin/DesktopGL/AnyCPU/Release","NALA")
+--Plus(bubbledir.."/NALA/bin/DesktopGL/AnyCPU/Release","NALA")
+Plus(bubbledir.."/NALA/DirectX/NALA_DX/bin/Windows/x86/Release","NALA")
 
 
 
